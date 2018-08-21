@@ -1,0 +1,3 @@
+<div *ngIf="piecesState.all[number]">
+  <div [ngStyle]="pieceStyle(piecesState.all[number])" class="piece" [innerHTML]="piecesState.types[piecesState.all[number]?.type]"></div>
+</div>

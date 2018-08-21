@@ -1,0 +1,13 @@
+.board {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  border: 5px solid grey;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+}

@@ -1,0 +1,6 @@
+<div [ngStyle]="styleSquare(number)" *ngIf="boardState?.layout" (click)="selectOrDrop(boardState.layout[number])">
+  {{boardState.layout[number].letter}}: {{boardState.layout[number].level }}
+  <div>
+    <vf-piece [number]="boardState.layout[number].piece"></vf-piece>
+  </div>
+</div>

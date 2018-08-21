@@ -1,0 +1,5 @@
+<button (click)="resetBoard()">Reset</button>
+<div class="board" *ngIf="board">
+  <vf-square class="square" *ngFor="let square of board.layout; let i = index;" [number]="i"></vf-square>
+</div>
+
