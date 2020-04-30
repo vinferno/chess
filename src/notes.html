@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<pre>
+  Null Test:
+
+if(variable === null && typeof variable === "object")
+
+- variable = ""; (false) typeof variable = string
+
+- variable = null; (true) typeof variable = object
+
+- variable = undefined; (false) typeof variable = undefined
+
+- variable = false; (false) typeof variable = boolean
+
+- variable = 0; (false) typeof variable = number
+
+- variable = NaN; (false) typeof variable = number
+
+
+
+Empty String Test:
+
+if(variable === "" && typeof variable === "string")
+
+- variable = ""; (true) typeof variable = string
+
+- variable = null; (false) typeof variable = object
+
+- variable = undefined; (false) typeof variable = undefined
+
+- variable = false; (false) typeof variable = boolean
+
+- variable = 0; (false) typeof variable = number
+
+- variable = NaN; (false) typeof variable = number
+
+
+
+
+Undefined Test:
+
+if(variable === undefined && typeof variable === "undefined")
+
+- variable = ""; (false) typeof variable = string
+
+- variable = null; (false) typeof variable = object
+
+- variable = undefined; (true) typeof variable = undefined
+
+- variable = false; (false) typeof variable = boolean
+
+- variable = 0; (false) typeof variable = number
+
+- variable = NaN; (false) typeof variable = number
+
+
+
+False Test:
+
+if(variable === false && typeof variable === "boolean")
+
+- variable = ""; (false) typeof variable = string
+
+- variable = null; (false) typeof variable = object
+
+- variable = undefined; (false) typeof variable = undefined
+
+- variable = false; (true) typeof variable = boolean
+
+- variable = 0; (false) typeof variable = number
+
+- variable = NaN; (false) typeof variable = number
+
+
+
+Zero Test:
+
+if(variable === 0 && typeof variable === "number")
+
+- variable = ""; (false) typeof variable = string
+
+- variable = null; (false) typeof variable = object
+
+- variable = undefined; (false) typeof variable = undefined
+
+- variable = false; (false) typeof variable = boolean
+
+- variable = 0; (true) typeof variable = number
+
+- variable = NaN; (false) typeof variable = number
+
+
+
+NaN Test:
+
+if(!parseFloat(variable) && variable != 0 && typeof variable === "number")
+
+- variable = ""; (false) typeof variable = string
+
+- variable = null; (false) typeof variable = object
+
+- variable = undefined; (false) typeof variable = undefined
+
+- variable = false; (false) typeof variable = boolean
+
+- variable = 0; (false) typeof variable = number
+
+- variable = NaN; (true) typeof variable = number
+</pre>
+
+</body>
+</html>
